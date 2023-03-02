@@ -12,6 +12,12 @@ struct BrainlyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth:850, minHeight:600)
+                
+                
         }
+        
+        .windowStyle(.hiddenTitleBar)
+        .windowToolbarStyle(.unifiedCompact(showsTitle: false))
     }
 }

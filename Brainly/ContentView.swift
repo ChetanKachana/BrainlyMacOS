@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var test = false
+    @State private var showingPanel = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+       NavigationSplitView(){
+           List{
+               
+               NavigationLink("Home"){
+                   HStack{
+                       Text("Brainly")
+                           .frame(minWidth:600)
+                   }
+               }
+              
+              Divider()
+               NavigationLink("Notifications"){
+                   HStack{
+                       Text("Notifications")
+                           .frame(minWidth:600)
+                   }
+               }
+               .badge(15)
+              
+           }
+           .scrollDisabled(true)
+           .listRowBackground(RoundedRectangle(cornerRadius:25)
+               .background(Color.blue))
+           .listStyle(.sidebar)
+           .frame(minWidth:70, maxWidth:250)
+       } detail:{
+           Text("brainly")
+               .frame(minWidth:600)
+               .listStyle(.sidebar)
+       }
+       
     }
 }
 

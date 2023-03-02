@@ -11,6 +11,7 @@
 		6122EA2629B0518800F50458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122EA2529B0518800F50458 /* ContentView.swift */; };
 		6122EA2829B0518900F50458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6122EA2729B0518900F50458 /* Assets.xcassets */; };
 		6122EA2B29B0518900F50458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6122EA2A29B0518900F50458 /* Preview Assets.xcassets */; };
+		6122EA3729B0536B00F50458 /* Transparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122EA3629B0536B00F50458 /* Transparency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6122EA2729B0518900F50458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6122EA2A29B0518900F50458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6122EA2C29B0518900F50458 /* Brainly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Brainly.entitlements; sourceTree = "<group>"; };
+		6122EA3629B0536B00F50458 /* Transparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transparency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				6122EA2329B0518800F50458 /* BrainlyApp.swift */,
 				6122EA2529B0518800F50458 /* ContentView.swift */,
+				6122EA3629B0536B00F50458 /* Transparency.swift */,
 				6122EA2729B0518900F50458 /* Assets.xcassets */,
 				6122EA2C29B0518900F50458 /* Brainly.entitlements */,
 				6122EA2929B0518900F50458 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				6122EA2629B0518800F50458 /* ContentView.swift in Sources */,
 				6122EA2429B0518800F50458 /* BrainlyApp.swift in Sources */,
+				6122EA3729B0536B00F50458 /* Transparency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
