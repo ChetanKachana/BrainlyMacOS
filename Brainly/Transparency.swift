@@ -16,3 +16,4 @@ struct VisualEffectView: NSViewRepresentable {
     func updateNSView(_ nsView: NSVisualEffectView, context: Context) {
     }
 }
+//.background(VisualEffectView().ignoresSafeArea())

@@ -12,6 +12,7 @@
 		6122EA2829B0518900F50458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6122EA2729B0518900F50458 /* Assets.xcassets */; };
 		6122EA2B29B0518900F50458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6122EA2A29B0518900F50458 /* Preview Assets.xcassets */; };
 		6122EA3729B0536B00F50458 /* Transparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122EA3629B0536B00F50458 /* Transparency.swift */; };
+		6182CA1E29B186CC00E3657C /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182CA1D29B186CC00E3657C /* FloatingWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6122EA2A29B0518900F50458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6122EA2C29B0518900F50458 /* Brainly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Brainly.entitlements; sourceTree = "<group>"; };
 		6122EA3629B0536B00F50458 /* Transparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transparency.swift; sourceTree = "<group>"; };
+		6182CA1D29B186CC00E3657C /* FloatingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6122EA2229B0518800F50458 /* Brainly */ = {
 			isa = PBXGroup;
 			children = (
+				6182CA1C29B1867700E3657C /* Floating Panel */,
 				6122EA2329B0518800F50458 /* BrainlyApp.swift */,
 				6122EA2529B0518800F50458 /* ContentView.swift */,
 				6122EA3629B0536B00F50458 /* Transparency.swift */,
@@ -70,6 +73,14 @@
 				6122EA2A29B0518900F50458 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6182CA1C29B1867700E3657C /* Floating Panel */ = {
+			isa = PBXGroup;
+			children = (
+				6182CA1D29B186CC00E3657C /* FloatingWindow.swift */,
+			);
+			path = "Floating Panel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				6122EA2629B0518800F50458 /* ContentView.swift in Sources */,
 				6122EA2429B0518800F50458 /* BrainlyApp.swift in Sources */,
 				6122EA3729B0536B00F50458 /* Transparency.swift in Sources */,
+				6182CA1E29B186CC00E3657C /* FloatingWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,12 +13,21 @@ struct ContentView: View {
     var body: some View {
        NavigationSplitView(){
            List{
-               
+               Button("Open Floating Panel"){
+                   showingPanel.toggle()
+               }
+               .floatingWindow(position:.zero, show: $showingPanel){
+                   Image(systemName: "circle.fill")
+                       .background(RoundedRectangle(cornerRadius: 25))
+                       .frame(width:250, height:250)
+                       .background(VisualEffectView().ignoresSafeArea())
+               }
                NavigationLink("Home"){
                    HStack{
                        Text("Brainly")
                            .frame(minWidth:600)
                    }
+                   
                }
               
               Divider()
