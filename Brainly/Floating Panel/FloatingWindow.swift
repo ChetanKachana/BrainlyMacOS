@@ -27,7 +27,9 @@ fileprivate struct FloatingWindowModifier<WindowView: View> : ViewModifier{
                 panel = FloatingPanelHelper(position: position, show: $show, content: {
                     windowView
                 })
+               
             }
+           
             .onChange(of: show) {
                 newValue in
                 if newValue{
@@ -35,7 +37,7 @@ fileprivate struct FloatingWindowModifier<WindowView: View> : ViewModifier{
                     panel?.makeKey()
                 }
                 else{
-                    
+                    panel?.close()
                 }
             }
     }
@@ -56,7 +58,12 @@ class FloatingPanelHelper<Content: View>: NSPanel{
         standardWindowButton(.miniaturizeButton)?.isHidden = true
         standardWindowButton(.zoomButton)?.isHidden = true
         isMovableByWindowBackground = true
+        hasShadow = false
         
         
+    }
+    override func close() {
+        super.close()
+        show=false
     }
 }
